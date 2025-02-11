@@ -1,1 +1,27 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --main-font: 'Inter-Variable';
+    --accent-font: 'PressStart2P';
+    --text-font-weight: 400;
+    --title-font-weight: 700;
+    --text-font-size: 18px;
+    --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --caption-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+    --acticle-header-font-size: 18px;
+    --button-text-size: 14px;
+    --section-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    --header-padding-size: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
+    --header-gap: 20px;
+    --header-block-margin: 100px;
+    --card-background-color: #fff;
+    --text-color: #000;
+    --liked-color: #f00;
+    --border-size: 2px;
+    --cards-gap: 50px;
+    --lable-top: 25px;
+    --lable-right: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
+    --lable-stroke-color: #fff;
+    --card-caption-gap: 25px;
+    --card-text-gap: 27px;
+    --main-gap: 50px;
+    --main-margin-bottom: 100px;
+}
