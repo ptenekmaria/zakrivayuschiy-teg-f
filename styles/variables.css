@@ -1,27 +1,77 @@
 :root {
     --main-font: 'Inter-Variable';
     --accent-font: 'PressStart2P';
+    --gradient-cross-color: #d3d3d3;
+    --background-color-top: #e7e7e7;
+    --background-color-bottom: #1a1a1a;
+    --main-gap: 50px;
+    --page-margin: 100px;
+    /* текст основные*/
     --text-font-weight: 400;
     --title-font-weight: 700;
     --text-font-size: 18px;
+    /* цвета основные */
+    --main-color: #fff;
+    --accent-color: #000;
+    --text-color: var(--accent-color);
+    /* хедер */
     --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
     --caption-font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
-    --acticle-header-font-size: 18px;
-    --button-text-size: 14px;
-    --section-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
     --header-padding-size: clamp(7.5rem, 7.3239rem + 0.7512vw, 8rem);
     --header-gap: 20px;
-    --header-block-margin: 100px;
-    --card-background-color: #fff;
-    --text-color: #000;
-    --liked-color: #f00;
-    --border-size: 2px;
-    --cards-gap: 50px;
+    /* карточки */
+    --card-max-size: 700px;
+    --section-inline-size: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
+    --card-background-color: var(--main-color);
+    --card-title-margin-block: 4px;
+    --card-title-margin-inline: 10px;
+    --card-caption-gap: 25px;
+    --card-caption-padding: 25px;
+    --card-text-gap: 28px;
+    --caption-text-line-height: 21px;
+    /* изображение */
     --lable-top: 25px;
     --lable-right: clamp(0.8125rem, 0.5484rem + 1.1268vw, 1.5625rem);
-    --lable-stroke-color: #fff;
-    --card-caption-gap: 25px;
-    --card-text-gap: 27px;
-    --main-gap: 50px;
-    --main-margin-bottom: 100px;
+    --lable-stroke-color: var(--main-color);
+    --lable-stroke-width: 1px;
+    /* кнопки */
+    --button-text-size: 14px;
+    --button-text-color: var(--main-color);
+    --caption-buttons-gap: 5px;
+    --like-button-min-size: 130px;
+    --text-button-padding: 10px;
+    --floppy-size: 21px;
+    --save-button-gap: 8px;
+    --save-button-pudding-block: 15px;
+    --save-button-pudding-inline: 20px;
+    --button-focus-shadow-x: 2px;
+    --button-focus-shadow-y: 2px;
+    --button-box-shadow: var(--button-focus-shadow-x) var(--button-focus-shadow-y) 0 var(--accent-color);
+    --button-focus-transition: box-shadow 0.3s ease;
+    --button-hover-transition: transform 0.5s ease-in-out;
+    /* лайк */
+    --like-icon-inline-size: 39px;
+    --like-icon-block-size: 34px;
+    --unliked-heart-color: #000;
+    --liked-heart-color: #f00;
+    --icon-button-focus-transition: border 0.3s ease;
+    --like-icon-fill-transition: fill 0.3s linear;
+    /* модалка */
+    --save-dialod-text-size: 14px;
+    --save-dialog-gap: 20px;
+    --save-dialog-padding: 30px;
+    --save-dialog-line-height: 21px;
+    --floppy-dialog-size: 39px;
+    --dialog-max-size: 357px;
+    --backdrop-color: rgb(0, 0, 0, 0.75);
+    /* обводка элементов */
+    --border-size: 2px;
+    --border-style: var(--border-size) solid var(--accent-color);
+    --border-transparent-style: var(--border-size) solid rgb(0,0,0,0);
+}
+
+@media (width <= 375px) {
+  :root {
+    --floppy-size: 28px;
+  }
 }
