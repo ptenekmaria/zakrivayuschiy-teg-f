@@ -1,7 +1,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font), sans-serif;
+  font-family: var(--main-font), var(--fallback-main-font), sans-serif;
   font-size: var(--text-font-size);
   font-variation-settings: "wght" var(--text-font-weight);
   color: var(--text-color);
@@ -41,7 +41,7 @@
 }
 
 .decorate-text {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), var(--fallback-accent-font), fantasy;
   text-transform: uppercase;
 }
 
@@ -105,7 +105,7 @@
   filter: hue-rotate(0.7turn);
 }
 
-.filter-grayscale-70 {
+.filter-grayscale-0-7 {
   filter: grayscale(0.7);
 }
 
@@ -113,7 +113,7 @@
   filter: contrast(170%);
 }
 
-.filter-blur {
+.filter-blur-2px {
   filter: blur(2px);
 }
 
@@ -122,7 +122,7 @@
 }
 
 .image-lable {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), var(--fallback-accent-font) fantasy;
   position: absolute;
   top: var(--lable-top);
   right: var(--lable-right);
@@ -157,10 +157,7 @@
   justify-content: start;
 }
 
-.card__caption-text {
-  display: flex;
-  flex-direction: column;
-  gap: var(--card-text-gap);
+.card__text {
   line-height: var(--caption-text-line-height);
 }
 
@@ -171,7 +168,7 @@
 }
 
 .button {
-  font-family: var(--accent-font);
+  font-family: var(--accent-font), var(--fallback-accent-font), fantasy;
   background-color: var(--card-background-color);
   border: var(--border-style);
   color: var(--button-text-color);
@@ -190,7 +187,6 @@
 .button:focus-visible {
   outline: none;
   box-shadow: var(--button-box-shadow);
-  transition: var(--button-focus-transition);
 }
 
 .button::before {
@@ -220,7 +216,6 @@
 .card__icon-button:focus-visible {
   outline: none;
   border: var(--border-style);
-  transition: var(--icon-button-focus-transition);
 }
 
 .like-icon {
@@ -241,7 +236,7 @@
 
 .contour {
   fill: var(--unliked-heart-color);
-  transition: var(--like-icon-fill-transition);
+  transition: var(--like-contour-fill-transition);
 }
 
 .heart {
@@ -257,7 +252,6 @@
 
   .button:hover::before {
     transform: scaleX(1);
-    transition: var(--button-hover-transition);
   }
 
   .card__icon-button:hover .core {

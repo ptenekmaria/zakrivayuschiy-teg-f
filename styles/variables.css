@@ -1,6 +1,8 @@
 :root {
     --main-font: 'Inter-Variable';
+    --fallback-main-font: 'Arial';
     --accent-font: 'PressStart2P';
+    --fallback-accent-font: 'Courier';
     --gradient-cross-color: #d3d3d3;
     --background-color-top: #e7e7e7;
     --background-color-bottom: #1a1a1a;
@@ -13,6 +15,7 @@
     /* цвета основные */
     --main-color: #fff;
     --accent-color: #000;
+    /* --accent-color: #0f0; */
     --text-color: var(--accent-color);
     /* хедер */
     --title-font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -25,9 +28,9 @@
     --card-background-color: var(--main-color);
     --card-title-margin-block: 4px;
     --card-title-margin-inline: 10px;
-    --card-caption-gap: 25px;
+    --card-caption-gap: 27px;
     --card-caption-padding: 25px;
-    --card-text-gap: 28px;
+    /* --card-text-gap: 28px; */
     --caption-text-line-height: 21px;
     /* изображение */
     --lable-top: 25px;
@@ -56,6 +59,7 @@
     --liked-heart-color: #f00;
     --icon-button-focus-transition: border 0.3s ease;
     --like-icon-fill-transition: fill 0.3s linear;
+    --like-contour-fill-transition: fill 0.1s linear;
     /* модалка */
     --save-dialod-text-size: 14px;
     --save-dialog-gap: 20px;
